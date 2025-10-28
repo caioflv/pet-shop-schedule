@@ -597,7 +597,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var day
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nvar apiConfig = {\n  baseURL: \"http://localhost:3333\"\n};\n\n//# sourceURL=webpack://petshop-schedule/./src/services/api-config.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nvar apiConfig = {\n  // baseURL: \"https://192.168.0.101:3333\",\n  baseURL: \"https://my-json-server.typicode.com/caioflv/pet-shop-schedule\"\n};\n\n//# sourceURL=webpack://petshop-schedule/./src/services/api-config.js?\n}");
 
 /***/ }),
 
