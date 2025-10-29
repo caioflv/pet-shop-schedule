@@ -1,0 +1,124 @@
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* font */
+	--ff-title: "Inter Tight", sans-serif;
+	--text-title: 700 1.5rem/2rem var(--ff-title);
+
+	--ff-body: "Inter", sans-serif;
+	--text-prgh-md: 500 0.875rem/1.5rem var(--ff-body);
+	--text-prgh-sm: 500 0.75rem/1rem var(--ff-body);
+	--text-label-lg: 700 1rem/1.5rem var(--ff-body);
+	--text-label-md: 700 0.875rem/1.5rem var(--ff-body);
+	--text-label-sm: 700 0.75rem/1rem var(--ff-body);
+	--text-link: 500 0.75rem/1rem var(--ff-body);
+
+	/* color */
+	/* content */
+	--color-content-primary: #ffffff;
+	--color-content-secondary: #98959d;
+	--color-content-tertiary: #666666;
+	--color-content-brand: #9282fa;
+	/* background */
+	--color-bkg-primary: #151515;
+	--color-bkg-secondary: #1e1e1e;
+	--color-bkg-tertiary: #23242c;
+	--color-bkg-brand: #9282fa;
+	--color-bkg-highlights: #bdb4fa;
+	/* border */
+	--color-border-primary: #3e3c41;
+	--color-border-secondary: #86818c;
+	--color-border-brand: #9282fa;
+	--color-border-dividor: #353339;
+	/* accent */
+	--color-accent-blue: #027df0;
+	--color-accent-blue-light: #16487a;
+	--color-accent-yellow: #f0dc02;
+	--color-accent-yellow-light: #756e1b;
+	--color-accent-orange: #f09102;
+	--color-accent-orange-light: #75501b;
+	/* stroke */
+	--color-card-stroke: #2e2c30;
+}
+
+body {
+	background-color: var(--color-bkg-primary);
+	position: relative;
+
+	height: 100vh;
+	height: 100dvh;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.content {
+	width: calc(23.4375rem - 1rem);
+	height: auto;
+
+	margin-inline: auto;
+}
+
+#logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+
+h1 {
+	font: var(--text-title);
+	color: var(--color-content-primary);
+}
+
+h2 {
+	font: var(--text-label-lg);
+	color: var(--color-content-primary);
+}
+
+h3 {
+	font: var(--text-label-lg);
+	color: var(--color-content-secondary);
+}
+
+h4 {
+	font: var(--text-label-md);
+	color: var(--color-content-primary);
+}
+
+p {
+	font: var(--text-prgh-md);
+	color: var(--color-content-secondary);
+}
+
+.subtitle {
+	font: var(--text-prgh-md);
+	color: var(--color-content-secondary);
+}
+
+main {
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+
+	height: 100%;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+@media (width >= 80em) {
+	.content {
+		width: 44.375rem;
+	}
+}

@@ -1,0 +1,81 @@
+.new-schedule-bkg {
+	width: 100%;
+	min-height: 100dvh;
+	height: max-content;
+
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding-block: 5rem;
+
+	background-color: rgba(0, 0, 0, 0.01);
+	backdrop-filter: blur(8px);
+
+	align-items: center;
+	justify-content: flex-start;
+
+	z-index: 2;
+}
+
+.new-schedule {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+
+	width: 22rem;
+	height: auto;
+
+	padding-block: 2.5rem;
+	padding-inline: 1.25rem;
+
+	border-radius: 0.75rem;
+
+	background-color: #23242c;
+	position: relative;
+
+	& form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		& > button {
+			margin-top: 1rem;
+			align-self: flex-end;
+		}
+	}
+
+	& .close-new-schedule {
+		width: 2.25rem;
+		height: 2.25rem;
+
+		top: 0.5rem;
+		right: 0.5rem;
+
+		cursor: pointer;
+
+		background: no-repeat center/contain url("../assets/icons/x.svg");
+
+		position: absolute;
+	}
+}
+
+.date-time-flex {
+	display: flex;
+	flex-direction: column;
+
+	gap: 1rem;
+}
+
+@media (width >= 80em) {
+	.new-schedule {
+		width: 30rem;
+	}
+
+	.date-time-flex {
+		flex-direction: row;
+	}
+}

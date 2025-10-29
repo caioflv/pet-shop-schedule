@@ -1,0 +1,28 @@
+{
+	"schedules": [
+		{
+			"id": "c185",
+			"tutorName": "Maria",
+			"petName": "Fifi",
+			"date": "2025-10-28",
+			"time": "09:00",
+			"service": "Bath and grooming"
+		},
+		{
+			"id": "c184",
+			"tutorName": "Caio Flávio",
+			"petName": "Apolo",
+			"date": "2025-10-28",
+			"time": "17:00",
+			"service": "Bath"
+		},
+		{
+			"id": "c184",
+			"tutorName": "Luiza",
+			"petName": "Amora",
+			"date": "2025-10-28",
+			"time": "20:00",
+			"service": "Vaccinate"
+		}
+	]
+}
